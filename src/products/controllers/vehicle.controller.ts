@@ -5,7 +5,6 @@ import { VehicleResponseModel } from '../dto/vehicle.response.model'
 import { VehicleSearchResponseModel } from '../dto/vehicle.search.response.model'
 import { VehicleService } from '../services/vehicle'
 
-
 @Controller('/api/v1/sparelabs/')
 export class VehicleController {
 
@@ -13,7 +12,7 @@ export class VehicleController {
     }
 
     @Post('new/vehicle')
-    async issueNewKeyPairByMe(
+    async createVehicle(
         @Request() req,
         @Body() body: Vehicle
     ): Promise<VehicleResponseModel> {
@@ -26,7 +25,7 @@ export class VehicleController {
         responseDescription: 'Requested vehicle data',
     })
     @Get('search/vehicle')
-    async postSearchKeyPairPublic(@Request() req): Promise<VehicleSearchResponseModel> {
+    async listVehicles(@Request() req): Promise<VehicleSearchResponseModel> {
         return this.service.postSearchKeyPairPublic(req.headers.authorization)
     }
 }
