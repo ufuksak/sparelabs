@@ -7,3 +7,5 @@
 ```
 docker-compose up -d
 ```
+### Swagger API
+http://localhost:3000/api/

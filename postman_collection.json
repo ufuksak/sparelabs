@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "ce703f7f-ca8e-42a5-865a-b72cd10efd07",
+		"name": "capmetro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2203400"
+	},
+	"item": [
+		{
+			"name": "Get a users's email",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List all devices",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6IjljOWU1ZjI4LWE4MTQtNDY2My1iOGJkLWMwMGI2ZGJiNDFmNyIsInR5cGUiOiJhcGlLZXkiLCJzZWNyZXQiOiJJUWR2UFNRbjlZMXBwdkxEIiwiZXhwaXJlcyI6bnVsbH0.5h3ZS-tm7cEQ4Boav5Ut_LTH-yUiR3m1NbIOou7MbN4CsihDLnXbItX6p2snbSw-7rgvMk_P7gbnsedKMxLWcg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.sparelabs.com/v1/devices",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sparelabs",
+						"com"
+					],
+					"path": [
+						"v1",
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all vehicles",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6IjljOWU1ZjI4LWE4MTQtNDY2My1iOGJkLWMwMGI2ZGJiNDFmNyIsInR5cGUiOiJhcGlLZXkiLCJzZWNyZXQiOiJJUWR2UFNRbjlZMXBwdkxEIiwiZXhwaXJlcyI6bnVsbH0.5h3ZS-tm7cEQ4Boav5Ut_LTH-yUiR3m1NbIOou7MbN4CsihDLnXbItX6p2snbSw-7rgvMk_P7gbnsedKMxLWcg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.sparelabs.com/v1/vehicles",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sparelabs",
+						"com"
+					],
+					"path": [
+						"v1",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all vehicles Local",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6IjljOWU1ZjI4LWE4MTQtNDY2My1iOGJkLWMwMGI2ZGJiNDFmNyIsInR5cGUiOiJhcGlLZXkiLCJzZWNyZXQiOiJJUWR2UFNRbjlZMXBwdkxEIiwiZXhwaXJlcyI6bnVsbH0.5h3ZS-tm7cEQ4Boav5Ut_LTH-yUiR3m1NbIOou7MbN4CsihDLnXbItX6p2snbSw-7rgvMk_P7gbnsedKMxLWcg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.sparelabs.com/v1/vehicles",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sparelabs",
+						"com"
+					],
+					"path": [
+						"v1",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a vehicle",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6IjljOWU1ZjI4LWE4MTQtNDY2My1iOGJkLWMwMGI2ZGJiNDFmNyIsInR5cGUiOiJhcGlLZXkiLCJzZWNyZXQiOiJJUWR2UFNRbjlZMXBwdkxEIiwiZXhwaXJlcyI6bnVsbH0.5h3ZS-tm7cEQ4Boav5Ut_LTH-yUiR3m1NbIOou7MbN4CsihDLnXbItX6p2snbSw-7rgvMk_P7gbnsedKMxLWcg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"identifier\": \"testidentifier\",\n    \"passengerSeats\": 10,\n    \"licensePlate\": \"licensePlate\",\n    \"make\": \"make\",\n    \"color\": \"red\",\n    \"model\": \"mercedes\",\n    \"photoUrl\": \"http://www.google.com\",\n    \"ownerUserId\": \"283eeac5-beea-465a-80a5-763009480d0f\",\n    \"accessibilityFeatures\": [\n        {\n            \"type\": \"wheelchair\",\n            \"count\": 0,\n            \"seatCost\": 10,\n            \"requireFirstInLastOut\": true\n        }\n    ],\n    \"autonomousVehicle\": {\n        \"externalId\": \"string2\"\n    },\n    \"metadata\": {},\n    \"emissionsRate\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.sparelabs.com/v1/vehicles",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sparelabs",
+						"com"
+					],
+					"path": [
+						"v1",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a vehicle Local",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6IjljOWU1ZjI4LWE4MTQtNDY2My1iOGJkLWMwMGI2ZGJiNDFmNyIsInR5cGUiOiJhcGlLZXkiLCJzZWNyZXQiOiJJUWR2UFNRbjlZMXBwdkxEIiwiZXhwaXJlcyI6bnVsbH0.5h3ZS-tm7cEQ4Boav5Ut_LTH-yUiR3m1NbIOou7MbN4CsihDLnXbItX6p2snbSw-7rgvMk_P7gbnsedKMxLWcg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"identifier\": \"testidentifier\",\n    \"passengerSeats\": 10,\n    \"licensePlate\": \"licensePlate\",\n    \"make\": \"make\",\n    \"color\": \"red\",\n    \"model\": \"mercedes\",\n    \"photoUrl\": \"http://www.google.com\",\n    \"ownerUserId\": \"283eeac5-beea-465a-80a5-763009480d0f\",\n    \"accessibilityFeatures\": [\n        {\n            \"type\": \"wheelchair\",\n            \"count\": 0,\n            \"seatCost\": 10,\n            \"requireFirstInLastOut\": true\n        }\n    ],\n    \"autonomousVehicle\": {\n        \"externalId\": \"string2\"\n    },\n    \"metadata\": {},\n    \"emissionsRate\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/sparelabs/new/vehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"sparelabs",
+						"new",
+						"vehicle"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
