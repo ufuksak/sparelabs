@@ -68,7 +68,8 @@ services:
 
   mysql:
     container_name: mysql
-    platform: linux/x86_64
+    # enable for M1 apple or Arm
+    #platform: linux/x86_64
     image: mysql:5.7
     command: --sql_mode=NO_ENGINE_SUBSTITUTION
     restart: always
