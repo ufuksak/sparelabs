@@ -188,6 +188,49 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "ListVehicles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "eamtest3@capmetro.org",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "ET0002910!",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"GRID\": {\n        \"GRID_NAME\": \"CUVEHS\",\n        \"USER_FUNCTION_NAME\": \"CUVEHS\",\n        \"GRID_ID\": 100140,\n        \"NUMBER_OF_ROWS_FIRST_RETURNED\": 1,\n        \"CURSOR_POSITION\": 0,\n        \"CURRENT_TAB_NAME\": \"LST\",\n        \"TAB_NAME\": \"\",\n        \"RESULT_IN_SAXORDER\": \"\",\n        \"TERSERESPONSE\": \"\",\n        \"LOCALIZE_RESULT\": \"\",\n        \"CUSTOM_FIELDS_CLASS_FILTER\": \"\"\n    },\n    \"GRID_TYPE\": {\n        \"TYPE\": \"LIST\"\n    },\n    \"DATASPY\": {\n        \"DATASPY_ID\": 101447\n    },\n    \"LOV\": {\n        \"LOV_PARAMETERS\": {\n            \"LOV_PARAMETER\": [\n                {\n                    \"ALIAS_NAME\": \"string\",\n                    \"TYPE\": \"string\",\n                    \"VALUE\": \"string\"\n                }\n            ]\n        }\n    },\n    \"REQUEST_TYPE\": \"LIST.HEAD_DATA.STORED\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/capmetro/search/vehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"capmetro",
+						"search",
+						"vehicle"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
